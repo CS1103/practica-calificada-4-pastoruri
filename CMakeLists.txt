@@ -1,10 +1,6 @@
-cmake_minimum_required(VERSION 3.11)
-project(PC4)
+cmake_minimum_required(VERSION 3.13)
+project(untitled)
 
 set(CMAKE_CXX_STANDARD 14)
-
-include_directories(.)
-
-add_executable(PC4
-        catch.hpp
-        main.cpp)
+set(CMAKE_CXX_FLAGS -pthread)
+add_executable(untitled main.cpp)
